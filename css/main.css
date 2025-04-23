@@ -100,7 +100,6 @@ section {
   border-style: solid;
   border-color: grey;
   border-radius: 300px;
-  margin-left: auto; /* pushes image to the far right within its container */
   display: block;
   rotate: 5deg;
 }
