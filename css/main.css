@@ -35,6 +35,16 @@ header nav ul {
 header nav ul a {
   text-decoration: none;
   color: #000;
+  position: relative;
+}
+
+header nav ul a.active:before {
+  position: absolute;
+  content: "";
+  width: 35%;
+  height: 1px;
+  border-bottom: 2px solid grey;
+  bottom: 0;
 }
 
 nav img {
@@ -47,7 +57,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1em;
+  margin-top: 10%;
 }
 
 .hero-left {
@@ -102,6 +112,38 @@ section {
   border-radius: 300px;
   display: block;
   rotate: 5deg;
+}
+
+.hero-right .hero-img {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-right .hero-img::before {
+  position: absolute;
+  content: "";
+  background: url("../assets/leaves-2-svgrepo-com.svg");
+  width: 30em;
+  height: 30em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -5em;
+  left: -13em;
+  z-index: -1;
+  transform: scaleX(-1);
+}
+
+.hero-right .hero-img::after {
+  position: absolute;
+  content: "";
+  background: url("../assets/leaves-2-svgrepo-com.svg");
+  width: 30em;
+  height: 30em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 5em;
+  left: 7em;
+  z-index: -1;
 }
 
 .contact-form {
